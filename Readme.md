@@ -21,7 +21,7 @@ Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten.
     to
     </td>
     <td>
- 	  definiert den Empfänger in ungerichteten Netzwerken. Entspricht ID in der Nodelist. Keine Sonderzeichen, etc. 
+ 	<p>Definiert den Empfänger in ungerichteten Netzwerken.</p> Entspricht ID in der Nodelist. Keine Sonderzeichen, etc. 
     </td>
 </tr>
 <tr>
@@ -29,7 +29,7 @@ Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten.
     relationship
     </td>
     <td>
-Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen werden auch zwei Einträge gemacht.
+Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. <p>Wenn zwei Arten der Beziehung bestehen werden auch zwei Einträge gemacht.</p>
     </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@ Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Bez
     weight
     </td>
     <td>
-	Ausprägung der Kantenstärke (Beziehungsstärke), definiert nach vorgegeben Skalen. Skala 1-3 schwach bis stark 
+	Ausprägung der Kantenstärke (Beziehungsstärke), definiert nach vorgegeben Skalen. <p>Skala 1-3 schwach bis stark </p>
    </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@ Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Bez
     year_end
     </td>
     <td>
-	Jahr ENDE der Bekanntschaft (bzw. Art der relationship) um nach vor/nach Haft filtern zu können und Dauer zu bestimmen
+	Jahr ENDE der Bekanntschaft (bzw. Art der relationship) um nach vor/nach Haft filtern zu können und Dauer zu bestimmen.
    </td>
 </tr>
 </table>
@@ -90,7 +90,7 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     id	
     </td>
     <td>
-    eindeutige Identifikation jedes einzelnen Knotens (vertex), der erfasst wird.  
+    Eindeutige Identifikation jedes einzelnen Knotens (vertex), der erfasst wird.  
     </td>
 </tr>
 <tr>
@@ -106,7 +106,7 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     type
     </td>
     <td>
-	1 = Mensch, 2 = Gruppierung
+	<p>1 = Mensch</p> 2 = Gruppierung
     </td>
 </tr>
 <tr>
