@@ -13,7 +13,7 @@ Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten.
     from
     </td>
     <td>
-    <p>Definiert den Sender in gerichteten Netzwerken.</p> <p>Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort</p>
+    <p>Definiert den Sender in gerichteten Netzwerken.</p> Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort
     </td>
 </tr>
 <tr>
@@ -21,7 +21,7 @@ Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten.
     to
     </td>
     <td>
- 	<p>Definiert den Empfänger in ungerichteten Netzwerken.</p> Entspricht ID in der Nodelist. Keine Sonderzeichen, etc. 
+ 	<p>Definiert den Empfänger in ungerichteten Netzwerken.Entspricht ID in der Nodelist. Keine Sonderzeichen, etc. 
     </td>
 </tr>
 <tr>
