@@ -155,7 +155,9 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     member
     </td>
     <td>
-	Manson Family Member, 1 = Nein, 2 = Ja
+	<p>Manson Family Member</p> 
+	    <p>1 = Nein</p>  
+	    <p>2 = Ja</p>
 </tr>
 </table>
 
