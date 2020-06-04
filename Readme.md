@@ -110,7 +110,7 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     sex
     </td>
     <td>
-    Dichotome Ausprägung: male oder female. Einfacher auch numerisch als 1 = männlich oder 2 =  weiblich zu kodieren.
+    Dichotome Ausprägung: male oder female. <p>Einfacher auch numerisch als <p>1 = männlich</p> oder <p>2 =  weiblich</p> zu kodieren. </p>
    </td>
 </tr>
 <tr>
