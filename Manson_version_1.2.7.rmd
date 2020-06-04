@@ -1068,12 +1068,12 @@ __e) TeilnehmerInnen des Projekts und Arbeitsaufwand im Projekt__
 
 |  Name|  Matrikelnummer|  Arbeitsaufwand|
 |--:|--:|--:|
-|  Frederike Fuhrmann|  1111|  zu viel|
-|  Eva McGowan|  36957|  zu viel|
-|  Thomas Nolte|  36867|  zu viel|
-|  Annika Stete|  1111|  zu viel|
-|  Rromina Trslic|  1111|  zu viel|
-|  Anna Veyhl|  36955|  zu viel|
+|  Frederike Fuhrmann|  1111|  viel|
+|  Eva McGowan|  36957|  viel|
+|  Thomas Nolte|  36867|  viel|
+|  Annika Stete|  1111|  viel|
+|  Rromina Trslic|  1111|  viel|
+|  Anna Veyhl|  36955|  viel|
 
 
 
