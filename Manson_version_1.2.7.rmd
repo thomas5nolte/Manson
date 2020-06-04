@@ -44,6 +44,8 @@ Es wird auf die Studie "Tactical Social Network Analysis" von Bichler, Lim und L
 ##  ............................................................................
 ##  Arbeitshypothesen
 Wir gehen von folgenden Arbeitshyptothesen aus:
+Wir gehen davon aus, dass Beziehungen zwischen den Opfern der Tatemorden und La Bianca gab. 
+Wir gehen davon aus, dass die Mansonfamilie ein sehr enges Verhältnis hatte.
 
 
 #   ............................................................................
@@ -1070,7 +1072,7 @@ Das RNotebook ist unter [https://raw.githubusercontent.com/thomas5nolte/Manson/m
 
 |  Name|  Matrikelnummer|  Arbeitsaufwand|
 |--:|--:|--:|
-|  Frederike Fuhrmann|  1111|  zu viel|
+|  Frederike Fuhrmann|  37426|  zu viel|
 |  Eva McGowan|  36957|  zu viel|
 |  Thomas Nolte|  36867|  zu viel|
 |  Annika Stete|  37511|  zu viel|
