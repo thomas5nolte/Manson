@@ -41,8 +41,8 @@ Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Bez
     relationship
     </td>
     <td>
-Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen werden auch zwei Einträge gemacht.
-   1 = Bekanntschaft, 2 = Freundschaft, 3 = Abneigung, 4 = Familie, 5 = Liebe/Ehe, 6 = Tötungsbeziehung (A hat B ermordet), 7 = versuchte Tötung (A hat versucht B zu ermorden)"
+<p>Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen werden auch zwei Einträge gemacht.</p>
+  <p> 1 = Bekanntschaft </p> <p> 2 = Freundschaft </p> <p>3 = Abneigung</p> <p> 4 = Familie</p> <p>5 = Liebe/Ehe</p> <p>6 = Tötungsbeziehung (A hat B ermordet)</p> <p>7 = versuchte Tötung (A hat versucht B zu ermorden)</p>
    </td>
 </tr>
 <tr>
