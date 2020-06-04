@@ -1,7 +1,8 @@
 <h1> Codebuch Charles Manson </h1>
 
 <h2> Edgelist </h2>
-Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten. Bis auf die ID idealerweise numerisch codiert (als Zahl).
+Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten. 
+<p>Bis auf die ID idealerweise numerisch codiert (als Zahl).</p>
 <table>  
 <colgroup>   
     <col width="50%">  
@@ -76,7 +77,8 @@ Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Bez
 
 
 <h2> Nodelist </h2>
-Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett übereinstimmen. Ausprägungen der Attribute in der Regel numerisch definieren.
+Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett übereinstimmen. 
+<p>Ausprägungen der Attribute in der Regel numerisch definieren. </p>
 
 <table>  
 <colgroup>   
