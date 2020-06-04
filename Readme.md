@@ -4,10 +4,6 @@
 Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten. 
 <p>Bis auf die ID idealerweise numerisch codiert (als Zahl).</p>
 <table>  
-<colgroup>   
-    <col width="50%">  
-    <col width="50%">
-</colgroup>
 <tr>         
     <td><b>Werte</b></td>  
     <td><b>Kommentar</b></td> 
@@ -17,7 +13,7 @@ Grundregel: Die Edgelist darf pro Spalte immer nur einen Wert enthalten.
     from
     </td>
     <td>
-    definiert den Sender in gerichteten Netzwerken. Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort
+    <p>Definiert den Sender in gerichteten Netzwerken.</p> <p>Entspricht ID in der Nodelist. Keine Sonderzeichen, nur ein Wort</p>
     </td>
 </tr>
 <tr>
