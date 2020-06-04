@@ -37,7 +37,7 @@ Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Bez
     relationship
     </td>
     <td>
-<p>Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. Wenn zwei Arten der Beziehung bestehen werden auch zwei Einträge gemacht.</p>
+Definiert die Art der Beziehung bei multiplexen Netzwerken mit verschiedenen Beziehungsarten. <p>Wenn zwei Arten der Beziehung bestehen, werden auch zwei Einträge gemacht.</p>
   <p> 1 = Bekanntschaft </p> <p> 2 = Freundschaft </p> <p>3 = Abneigung</p> <p> 4 = Familie</p> <p>5 = Liebe/Ehe</p> <p>6 = Tötungsbeziehung (A hat B ermordet)</p> <p>7 = versuchte Tötung (A hat versucht B zu ermorden)</p>
    </td>
 </tr>
@@ -77,10 +77,6 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
 <p>Ausprägungen der Attribute in der Regel numerisch definieren. </p>
 
 <table>  
-<colgroup>   
-    <col width="50%">  
-    <col width="50%">
-</colgroup>
 <tr>         
     <td><b>Werte</b></td>  
     <td><b>Kommentar</b></td> 
@@ -114,7 +110,7 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     sex
     </td>
     <td>
-		Dichotome Ausprägung: male oder female. Einfacher auch numerisch als 1 = männlich oder 2 =  weiblich zu kodieren.
+    Dichotome Ausprägung: male oder female. Einfacher auch numerisch als 1 = männlich oder 2 =  weiblich zu kodieren.
    </td>
 </tr>
 <tr>
