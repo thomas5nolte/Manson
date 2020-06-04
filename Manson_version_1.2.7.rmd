@@ -239,25 +239,47 @@ get.diameter(hollywood)
 farthest_vertices(hollywood)
 ```
 
-Der längste Pfad durch das Netzwerk ist: "Jay Sebring"         "Roman Polanski"      "Rick Dalton"         "Patricia Krenwinkel" "Manson Family"    
+Der längste Pfad durch das Netzwerk ist: "Jay Sebring" -> "Roman Polanski"  -> "Rick Dalton"  -> "Patricia Krenwinkel" -> "Manson Family"    
 Dementsprechend sind Jay Sebring und die Manson Family am weitesten voneinander entfernt, mit einer Distanz von 103 (Noch heraussuchen, ob das weit oder nicht ist). 
 
 ```{r Zentralitätsmaße manson}
-degree_manson <-  degree(manson, mode = "IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
-degree_manson
-#View(degree_manson)
-#Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
-components(manson)
-#Components zeigt die Anzahl der Teilnetzwerke und deren Größewhich.max(degree(manson, normalized = T))
-#Liefert den Knoten, im Netzwerk manson, welcher den größten Degreewert hat
 
-ego_size(manson)
-#Liefert uns den Knoten, mit den meisten Verbindungen
+#Indegree = Anzahl der Kanten, die auf einen Knoten eingehen. (Popularität)
+degree(manson, mode="in")
+centr_degree(manson, mode="in", normalized=T)
+#Outdegree = Anzahl der Kanten, die ein Knoten zu anderen Knoten hat. (Aktivität)
+degree(manson, mode="out")
+centr_degree(manson, mode="out", normalized=T)
+
+#Components zeigt die Anzahl der Teilnetzwerke und deren Größe
+components(manson)
+
+#Gibt die durchschnittliche Länger, der Verbindung zwischen zwei Knoten aus
 mean_distance(manson)
-#Gibt die längste Verbindung zwischen zwei Knoten aus
-edge_density(manson)
-#Gibt die Kantendichte des Netzwerks aus
 ```
+
+__Indegreewerte (Popularität) sind:__ 
+Charles Manson	96
+Manson Family	72
+Charles Tex Watson	39
+Linda Kasabian	15
+Susan Atkins	15
+Sharon Tate	14
+Patricia Krenwinkel	12
+Leslie Van Houten	11
+Jay Sebring	11
+
+__Outdegreewerte (Aktivität) sind:__
+Charles Manson	102
+Charles Tex Watson 44
+Susan Atkins	23
+Linda Kasabian 21
+Patricia Krenwinkel 21
+Sharon Tate	 17
+Leslie Van Houten 14
+Roman Polanski	10
+
+Das Gesamtnetzwerk hat nur __eine Componente__. Das bedeutet, dass alle Knoten in irgendeiner Form miteinander verbunden sind. Wobei die durchschnittliche Länge die es braucht, um zwei Knoten miteinander zu Verbinden __2.82 Schritte sind__. 
 
 
 ```{r Zentralitätsmaße hollywood}
