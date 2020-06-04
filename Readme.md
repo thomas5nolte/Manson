@@ -147,7 +147,7 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     power
     </td>
     <td>
-	definiert als Macht des Akteurs <p>(1 = sehr gering, 5 = sehr hoch)</p>
+	Definiert als Macht des Akteurs <p>(1 = sehr gering, 5 = sehr hoch)</p>
 </tr>
 <tr>
     <td>
