@@ -134,21 +134,27 @@ Grundregel: die IDs der Nodelist müssen mit den IDs der Edgelist komplett über
     type_of_death
     </td>
     <td>
-	1 = lebend, 2 = natürlicher Tod , 3 = ermordet, 4 = Selbstmord, 5 = Verschwunden, genaueres unbekannt    </td>
+	<p>1 = lebend</p> 
+	    <p>2 = natürlicher Tod</p> 
+	    <p>3 = ermordet</p> 
+	    <p>4 = Selbstmord</p> 
+	    <p>5 = Verschwunden</p> 
+	    <p>genaueres unbekannt</p>
+	</td>
 </tr>
 <tr>
     <td>
     power
     </td>
     <td>
-	definiert als Macht des Akteurs (1 = sehr gering, 5 = sehr hoch)
+	definiert als Macht des Akteurs <p>(1 = sehr gering, 5 = sehr hoch)</p>
 </tr>
 <tr>
     <td>
     relation_to_murder
     </td>
     <td>
-	1 = hat niemanden getötet, 2 = war bei Mord anwesend, 3 = hat jemanden getötet
+	<p>1 = hat niemanden getötet</p> <p>2 = war bei Mord anwesend</p> <p>3 = hat jemanden getötet</p>
 </tr>
 <tr>
     <td>
