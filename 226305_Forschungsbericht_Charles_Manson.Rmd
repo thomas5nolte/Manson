@@ -1241,13 +1241,11 @@ Durch das gemeinsame Ziel und die klar vorgegebene Struktur wurden die internen 
 
 ## Lessons Learned
 
-Die größten Lektionen, welche wir aus dem Projekt mitgenommen haben sind folgende: 
+Während der Datenerhebung standen wir immer wieder vor dem Problem, dass die Literatur über Charles Manson lückenhaft und sehr subjektiv war. Auch trotz intensiver Nachrecherche konnten nicht alle Informationen gefunden werden. Daher kam es in unserem Datensatz oftmals zu Isolates. Dies wirkte sich stark auf die Netzwerkerstellung und -analyse aus, in der wir mehrere, unterschiedliche Interpretationen besprachen. Eine Netzwerkstruktur, die zuvor noch nicht untersucht wurde ist spannend, es muss jedoch mit einem lückenhaften Datensatz und damit einem komplexeren Arbeitsprozess gerechnet werden. 
 
-Es ist wichtig, eine klare Aufgabenaufteilung zu erarbeiten und Arbeitspakete zu verteilen. 
+Kommunikation ist der Schlüssel zum Erfolg – so auch in unserer Gruppe. Durch regelmäßige, ausführliche Teammeetings konnten Missverständnisse aus dem Weg geschafft und offene Fragen beantwortet werden. Gerade in einem lückenhaften Datensatz wie unserem war das von essentieller Bedeutung, um Fehlinterpretationen zu vermeiden. Das weitere Vorgehen wurde besprochen und ein gemeinschaftliches Verständnis über die Thematik innerhalb unserer Gruppe geschaffen. Wer Hilfe brauchte, wurde unterstützt. Durch die offene und regelmäßige Kommunikation gewährleisteten wir eine positive und motivierte Stimmung in unserer Gruppe. 
 
-Es ist schwierig, mit einem so lückenhaften Datensatz zu arbeiten. Viele unserer Werte sind nicht definiert, weil es in keiner Literatur dazu angaben gibt. 
-
-Bei Problemen hat es sich herausgestellt, dass ein Gespräch mit den Kommillitonen zielführend sein kann. So werden neue Lösungsmöglichkeiten anhand von Gesprächen schneller gefunden und eventuelle Ungereimtheiten fallen besser auf. 
+Bei auftretenden Problemen war es immer hilfreich, sich an die anderen Gruppenmitglieder zu richten. Vor allem bei der Datenverarbeitung in R Studio war es von großer Hilfe, gemeinsam nach Lösungen zu suchen. Das gemeinsame Vorgehen bei Problemen half uns nicht nur diese zu lösen, sondern stärkte auch die Dynamik innerhalb der Gruppe. 
 
 
 
