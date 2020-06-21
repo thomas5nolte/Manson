@@ -19,9 +19,12 @@ options(max.print = 999999)
 
 # Vorwort / Zusammenfassung (Abstract)
 
-Verfolgen kriminelle Gruppierungen ihre ZieIe systematisch, so spricht man von organisierter Kriminalität. Um der Organisation in der jeweiligen Gruppe gerecht zu werden, braucht es klare Hierarchien und Strukturen. Diese lassen sich in Netzwerken abbilden und analysieren. Der nachfolgende Forschungsbericht untersucht das Beziehungsnetzwerk von Charles Manson, einem Massenmörder aus der USA. Hierbei spielen die Manson-Family, in der er als Anführer agierte, sowie die Opfer eine wichtige Rolle. Es zeigt sich ... erst am Ende wichtigste Ergebnisse verfassen
+Seit 1970 haben moderne, qualitative Netzwerkanalysen sowohl in der Praxis als auch in der Wissenschaft an Popularität gewonnen (Rau & Höffler, 2020, S.7). Die methodische Vorgehensweise kann in unterschiedlichsten Thematiken genutzt werden, bietet somit vielfältige Einsatzmöglichkeiten und findet auch in der Kriminologie immer häufiger in Form von qualitativen Netzwerkanalysen Anwendung (ebd.). Vor dieser Zeit wurden Verbrechen nur sehr selten mit Netzwerkanalysen untersucht. So ist es nicht verwunderlich, dass die Verbrechen von Charles Manson, einem Massenmörder aus den USA, die Kriminologen der 60er Jahre vor enorme Herausforderungen stellten.
 
-Keywords: Netzwerkanalyse, Teilnetzwerke, Serienmörder, Kriminalitätsmustertheorie?
+Der nachfolgende Forschungsbericht untersucht das Beziehungsnetzwerk von Charles Manson. Hierbei spielen die Manson Family, in der er als Anführer agierte, sowie die Opfer eine wichtige Rolle. Charles Manson war der alleinige Anführer der Gruppe. Er und alle an den Morden beteiligten Mitglieder weisen ein enges Verhältnis zueinander auf. Die gesamte Gruppe jedoch hatte keine enge Bindung untereinander, manche Mitglieder kannten sich vermutlich nicht einmal. Mittelpunkt und Orientierung war stets Charles Manson, von dem alle Entscheidungen ausgingen. Zu den Opfern, der Manson Family hatten die Beteiligten an den Tate- und LaBianca-Morden weder eine direkte noch eine indirekte Beziehung. 
+
+
+Keywords: Netzwerkanalyse, Teilnetzwerke, Serienmörder, Kriminalitätsmustertheorie
 
 
 # Beschreibung des Themenfeldes
@@ -44,17 +47,138 @@ Es wird auf die Studie "Tactical Social Network Analysis" von Bichler, Lim und L
 ##  Arbeitshypothesen
 Wir gehen von folgenden Arbeitshyptothesen aus: 
 
-- Wir gehen davon aus, dass Charles Manson der Alleinige Anführer der Mansonfamilie war.
+- Wir gehen davon aus, dass Charles Manson der alleinige Anführer der Mansonfamilie war.
 
 
 - Wir gehen davon aus, dass die Mansonfamilie ein sehr enges Verhältnis hatte.
 
 
-- Wir gehen davon aus, dass Beziehungen zwischen den Opfern der Tatemorden und La Bianca gab. 
-
-
+- Wir gehen davon aus, dass die Beteiligten an den Tate- und LaBianca-Morden eine zumindest indirekte Beziehung zu ihren Opfern hatten.
 
 # Datenerhebung:
+
+Das Netzwerk von Charles Manson wurde bis dato so noch nicht untersucht oder visualisiert und stellt daher eine spannende Forschungslücke dar. Bereits bestehende Literatur zu verschiedenen Kriminalitätstheorien diente hierbei als grundlegende Orientierung, beispielsweise die Netzwerkanalyse zu dem Serienmörder Green River. So konnte ein erster allgemeiner Überblick über die Thematik geschaffen werden. Grundlage dafür war folgende Literatur:
+
+
+Bichler, Gisela; Lim, Steven; Larin, Edgar (2017). Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
+
+Cullen, F. T. & Wilcox, P. (2010). Encyclopedia of criminological theory (Vol. 1). Sage
+
+
+Im Anschluss war die Literatur zu Charles Manson zentral. In einem Zeitraum von drei Wochen der Winterferien des Wintersemesters 2019/2020 wurde eine Grundlage über Charles Manson und der von ihm angeführten “Manson Family”-Gruppierung erarbeitet. Die Ressourcen hierbei waren breit gefächert - von Podcasts über Bücher bis hin zu Videos und Filmen -  um einen möglichst großen Umfang erforschen und an Daten in unser Netzwerk aufnehmen zu können. Die Gruppengröße von sechs Personen erleichterte die Verteilung der Aufgabenpakete. Die Recherche erstreckte sich über das Leben von Charles Manson, das Leben und die Sichtweise anderer Manson-Family-Mitglieder und den Erkenntnissen aus bisherigen Untersuchungen im Fall Manson. Verwendet wurden dabei folgende Bücher: 
+
+Bugliosi, V., & Bugliosi, V. G. (2010). Helter Skelter - Der Mordrausch des Charles Manson: Eine Chronik des Grauens. Riva Verlag
+
+Greene, C. (1992). Der Fall Charles Manson, Mörder aus der Retorte. Wiesbaden: E.i.r.
+
+Lake, D., & Herman, D. (2017). Member of the Family: My Story of Charles Manson, Life Inside His Cult, and the Darkness That Ended the Sixties. New York, NY: William Morrow
+
+Watson, C. (1991). Bekenntnisse eines Mörders. Charles Manson... Sharon Tate...Hintergründe eines Massakers. Neuhausen-Stuttgart: Haenssler-Verlag GmbH
+
+Sanders, E. (2016). The Family (Deutsche Edition): Die Geschichte von Charles Manson und seiner Strand-Buggy-Bande. Fuego
+
+Surmava-Große, T. (2019). Charles Manson. In D. Frey (Hrsg.), Psychologie des Guten und Bösen: Licht- und Schattenfiguren der Menschheitsgeschichte—Biografien wissenschaftlich beleuchtet.
+
+
+
+Das Lesen der Bücher war mit einem großen Zeitaufwand verbunden, da die Literatur oft lückenhaft war und detaillierte Nachrecherche zu Textpassagen bzw. Personen betrieben werden musste. Dies erschwerte die Datenerhebung, da einige Daten schwer bis gar nicht auffindbar waren. Unter Anderem konnten wichtige Details über Verbindungen von Charles Manson und den Mitgliedern der Manson Family nicht ermittelt werden, da dafür der Zugriff fehlte oder dies nicht dokumentiert wurde. Dadurch kam es in der Datenerhebung zu ungewollten Lücken, die sich jedoch nicht verhindern ließen. 
+Ein weiteres Hindernis stellten die Zugriffsrechte auf die Gerichtsprotokolle dar. Um die subjektive Berichterstattung aus den Bücher zu mindern, war es nötig, eine Objektivität herzustellen. Da dieser Fall jedoch vor Jahrzehnten stattfand und zusätzlich in den USA, war es nicht möglich, einen Einblick in die damaligen Dokumente zu erhalten. Daher standen weitere Quellen im Fokus, um die Daten der Bücher zu vergleichen und gegebenenfalls zu vervollständigen:
+
+
+Biography.com Editors (2019): Charles Manson Biography (1934–2017), online verfügbar unter https://www.biography.com/crime-figure/charles-manson, zuletzt geprüft am 30.12.2019
+
+All That’s interesting (2016): Charles Manson Facts That Reveal The Man Behind The Monster. In: All That's Interesting, 14.03.2016. Online verfügbar unter https://allthatsinteresting.com/charles-manson-facts, zuletzt geprüft am 27.12.2019
+
+All that’s interesting (2017): How Did Charles Manson Die And What Happened To His Body? In: All that’s interesting, 16.11.2017. Online verfügbar unter https://allthatsinteresting.com/charles-manson-death, zuletzt geprüft am 30.12.2019
+
+Charles Manson Homepage (2020): Charles Manson. Online verfügbar unter https://www.charlesmanson.com/, zuletzt geprüft am 03.01.2020
+
+Die Webseite www.charlesmanson.com stellte ein entscheidende Quelle für die Datenerhebung von dem Netzwerk zu Charles Manson dar. Viele zuvor entstandene Lücken konnten dadurch geschlossen werden. Diese Webseite listet unter anderem alle Manson Family-Mitglieder auf, welche mit bereits recherchierten Quellen abgeglichen wurden. Einige wurden in Quellen erwähnt und nicht weiter aufgeführt, was zu Isolates im Netzwerk führte. Trotzdem war es bedeutend, diese Mitglieder aufzuführen, um die Dimension der Manson Family zu verdeutlichen. 
+
+Um weitere Recherche zu betreiben, wurden zusätzlich folgende Artikel bearbeitet:
+
+Bigalke, Silke & Sürig, Dieter (2014): Warum Massenmörder die Menschen faszinieren. In: Süddeutsche Zeitung, 21.02.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/bestseller-monster-warum-massenmoerder-die-menschen-faszinieren-1.1895132, zuletzt geprüft am 30.12.2019
+
+Deutschlandfunk (2017): Mörder und Sektenführer Charles Manson gestorben - "Ich bin alles, was schlecht ist" (20.11.2017). In: Deutschlandfunk Kultur website: Online verfügbar unter: https://www.deutschlandfunkkultur.de/moerder-und-sektenfuehrer-charles-manson-gestorben-ich-bin.2156.de.html?dram:article_id=401056, zuletzt geprüft am 03.01.2020
+
+DER SPIEGEL: Massenmörder Charles Manson (o. J.). In: Der Spiegel, 6.8.2009. Online verfügbar unter https://www.spiegel.de/consent-a-?targetUrl=https%3A%2F%2Fwww.spiegel.de%2Fgeschichte%2Fmassenmoerder-charles-manson-a-948437.html, zuletzt geprüft am 27.12.2019
+
+Dpa (2014): US-Sektenführer - Charles Manson will heiraten. In: Süddeutsche Zeitung, 18.11.2014. Online verfügbar unter https://www.sueddeutsche.de/panorama/amerikanischer-serienmoerder-charles-manson-will-heiraten-1.2225598, zuletzt geprüft am 03.01.2020
+
+Dpa (2010): Vom Massenmörder zur Kultfigur. In: Süddeutsche Zeitung (17.05.2010). Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-und-amerika-vom-massenmoerder-zur-kultfigur-1.154180, zuletzt geprüft am 19.12.2019
+
+Edition (2018): Judge decides grandson will get Charles Manson’s body—CNN. (13.03.2018). Online verfügbar unter: https://edition.cnn.com/2018/03/12/us/charles-manson-body-decision/index.html, zuletzt geprüft am 20.12.2019
+
+Gasteiger, Carolin (2017): Charles Manson und Popkultur: der einzigen Verbündeten. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/kultur/zum-tod-von-charles-manson-duestere-ikone-der-popkultur-1.3367420, zuletzt geprüft am 30.12.2019
+
+Gasteiger, Carolin (2019): Arte-Doku über Charles Manson - Größenwahn. In: Süddeutsche Zeitung, 30.08.2019. Online verfügbar unter https://www.sueddeutsche.de/medien/charles-manson-arte-doku-tom-o-dell-1.4576930, zuletzt geprüft am 03.01.2020
+
+Häntzschel, Jörg (2011): Charles Manson, oberster Klimaschützer. In: Süddeutsche Zeitung, 19.04.2011. Online verfügbar unter https://www.sueddeutsche.de/panorama/sektenchef-interview-aus-dem-gefaengnis-charles-manson-oberster-klimaschuetzer-1.1087342, zuletzt geprüft am 30.12.2019
+
+heise (2008): Der Elvis des Massenmords | Telepolis. (23.06.2008). In: heise. Online verfügbar unter https://www.heise.de/tp/features/Der-Elvis-des-Massenmords-3418841.html, zuletzt geprüft am 27.12.2019
+
+Independent (2015) Manson wedding off after it emerges that his fiance just wanted his corpse for display. In: The Independent website, 09.02.2015. Online verfügbar unter http://www.independent.co.uk/news/people/charles-manson-wedding-off-after-it-emerges-that-girlfriend-afton-elaine-burton-just-wanted-his-10034793.html, zuletzt geprüft am 20.12.2019
+
+Katzenberger, Paul (2013): Roman Polanski zum 80.Geburtstag - Schuld von allen Seiten. In: Süddeutsche Zeitung, 18.08.2013. Online verfügbar unter https://www.sueddeutsche.de/kultur/roman-polanski-zum-80-geburtstag-unverwuestlich-1.1744867, zuletzt geprüft am 03.01.2020
+
+Krekeler, Elmar (2009): Literatur: Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 03.01.2020
+
+Neue Züricher Zeitung (2019): Sekte: Frühere Manson-Anhängerin könnte aus Haft entlassen werden. In: NZZ, 31.01.2019. Online verfügbar unter: https://www.nzz.ch/panorama/fruehere-manson-anhaengerin-koennte-aus-haft-entlassen-werden-ld.1456102, zuletzt geprüft am 27.12.2019
+
+The New York Times (1993): Charles Manson Gets Royalties on T-Shirts. In: The New York Times, 25.11.1993. Online verfügbar unter https://www.nytimes.com/1993/11/25/us/charles-manson-gets-royalties-on-t-shirts.html, zuletzt geprüft am 03.01.2020
+
+ORF (2012): Charles Manson bleibt im Gefängnis. In: ORF, 11.04.2012. Online verfügbar unter https://orf.at/v2/stories/2114770/, zuletzt geprüft am 20.12.2019
+
+Quora (2018): How did Charles Manson stay unharmed all those years in prison? Was he segregated or did he pay inmates for protection? In: Quora, 29.09.2018. Online verfügbar unter: https://www.quora.com/How-did-Charles-Manson-stay-unharmed-all-those-years-in-prison-Was-he-segregated-or-did-he-pay-inmates-for-protection, zuletzt geprüft am 20.12.2019
+
+Düll, Helena (2017): Serienmörder Charles Manson starb an Herzstillstand. In: Rolling Stone, 12.12.2017. Online verfügbar unter:  https://www.rollingstone.de/serienmoerder-charles-manson-starb-an-herzstillstand-und-anderen-gesundheitlichen-problemen-1420949/, zuletzt geprüft am 03.01.2020
+
+Schmieder, Jürgen (2019): LaBianca-Haus für zwei Millionen Dollar verkauft. In: Süddeutsche Zeitung, 29.07.2019. Online verfügbar unter https://www.sueddeutsche.de/panorama/labianca-charles-manson-1.4542539, zuletzt geprüft am 30.12.2019
+
+Süddeutsche Zeitung (2017): Charles Manson ist tot. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/usa-charles-manson-ist-tot-1.3757046, zuletzt geprüft am 30.12.2019
+
+Süddeutsche Zeitung (2012): Charles Manson scheitert mit zwölftem Gnadengesuch. In: Süddeutsche Zeitung, 12.04.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/verurteilter-us-serienmoerder-charles-manson-scheitert-mit-zwoelftem-gnadengesuch-1.1330531, zuletzt geprüft am 27.12.2019
+
+Süddeutsche Zeitung (2012): Bücher über Geisterstädte - Cowboys und Gespenster. In: Süddeutsche Zeitung, 30.07.2012. Online verfügbar unter https://www.sueddeutsche.de/kultur/buecher-ueber-geisterstaedte-cowboys-und-gespenster-1.1426012, zuletzt geprüft am 27.12.2019
+
+Süddeutsche Zeitung (2012): Anhänger des US-Serienmörders Charles Manson. In: Süddeutsche Zeitung, 05.10.2012. Online verfügbar unter https://www.sueddeutsche.de/panorama/bruce-davis-anhaenger-des-us-serienmoerders-charles-manson-soll-freigelassen-werden-1.1487862, zuletzt geprüft am 27.12.2019
+
+Web (2009): Die Zeugenaussage von Charles Manson. In: web.de, 19.12.2009. Online verfügbar unter:  https://web.archive.org/web/20091212100142/http://serien-killer.com/000000968e11c0e2b/53735996aa0cb7301/00000096900132506/537359974c043ee01.html, zuletzt geprüft am 20.12.2019
+
+Welt (2014): Kriminalität: Mörder Charles Manson darf 26-Jährige heiraten. In: WELT, 18.11.2014. Online verfügbar unter: https://www.welt.de/vermischtes/article134443472/Moerder-Charles-Manson-darf-26-Jaehrige-heiraten.html, zuletzt geprüft am 30.12.2019
+
+Welt (2017): Satanist, Kultführer, Mörder: Wie Charles-Manson zur Pop-Ikone wurde. In: WELT, 20.11.2017. Online verfügbar unter https://www.welt.de/vermischtes/article170773185/Wie-Charles-Manson-zur-Pop-Ikone-begnadigt-wurde.html, zuletzt geprüft am 20.12.2019
+
+Welt (2009): Charles Manson und Roman Polanski treffen sich. In: WELT, 06.08.2009. Online verfügbar unter https://www.welt.de/kultur/literarischewelt/article10573701/Charles-Manson-und-Roman-Polanski-treffen-sich.html, zuletzt geprüft am 27.12.2019
+
+Winkler, Willi (2014): Mitglied der Manson-Bande - Zweite Erleuchtung. In: Süddeutsche Zeitung, 08.08.2014. Online verfügbar unter https://www.sueddeutsche.de/kultur/mitglied-der-manson-bande-aeussert-sich-die-zweite-erleuchtung-1.2080738, zuletzt geprüft am 30.12.2019
+
+Winkler, Willi (2017): Schwarzschillerndes Monster. In: Süddeutsche Zeitung, 20.11.2017. Online verfügbar unter https://www.sueddeutsche.de/panorama/charles-manson-schwarzschillerndes-monster-1.3757243, zuletzt geprüft am 27.12.2019
+
+
+Um den Limitationen eines einzelnen Mediums zu entgehen, entschieden wir uns zusätzlich noch Dokumentationen in Form von Videos in die Datenerhebung mit einzubeziehen: 
+
+
+DokuDomi. (25. Januar 2019): Der brutalste Serienmörder Amerikas | Dokumentation 2019/HD, abgerufen von https://www.youtube.com/watch?v=iAu1Mc0KqJk
+
+SerienkillerUSA. (25. März 2013): Amerikas Albtraum - Die gefährlichsten Serienkiller der USA - E08 - Charles Manson (2009), abgerufen von: https://www.youtube.com/watch?v=UMaZ3QKz8EQ
+
+McIntosh, S., Heyman, D. & Tarantino, Q (2019): Once upon a time in Hollywood. United States, United Kingdom: Columbia Pictures
+Peter HH. (24. Februar 2013): Charles Manson - Dianne Sawyer Documentary, abgerufen von https://www.youtube.com/watch?v=v4qZB2ytq10
+
+
+Sowie Podcasts:
+
+
+Cutler Media LLC (2018 - heute). “The Manson Family” - Charles Manson (Part 1 - Part 2) - Cults.
+
+https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611111 
+
+https://podcasts.apple.com/de/podcast/cults/id1286818575?i=1000392611110
+
+
+
+Alle erhobenen Daten wurden von den Gruppenmitgliedern in die Google-Spreadsheets Edge- und Nodelist übertragen. Da vor Beginn des Datenerhebungsprozesses ein klares Codebuch definiert wurde, konnten bedeutende Daten der Akteure im Netzwerk festgehalten werden. Darunter personenbezogenen Daten und Daten zu Beziehungen der Akteure untereinander. Zusätzliche Informationen wurden in einer weiteren Spalte notiert, um wichtige Details, welche im Codebuch kein Platz fanden, nicht auszuklammern. Regelmäßige Teammeetings und kurze Absprachen ermöglichten zudem ein gemeinschaftliches Verständnis des Falles Charles Manson und der Manson Family innerhalb des Teams. Bei offenen, noch zu klärenden Fragen wurden diese vom jeweiligen Gruppenmitglied notiert und im nächsten Teammeeting angesprochen. 
 
 ##  Zugang
 Die Materialien für unsere Netzwerkanalyse haben wir breit gefächert ausgewählt, sodass wir eine möglichst große Überschneidung der Ergebnisse erzielen können. Dies gewährleistet eine Kontinuität in der subjektiv dokumentierten Thematik. 
@@ -462,7 +586,7 @@ which.max(betweenness(member))
 #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
 ```
 
-```{r}
+```{r Analyse der Mansonfamilie}
 components(member) 
 
 #View(degree(member, normalized = TRUE))
@@ -1205,7 +1329,20 @@ plot(ho_ge_cli, edge.arrow.size = .4,
 
 ## Zentrale Erkenntnisse
 
+Zentrale Erkenntnisse
+Die Manson Family (MF) – eine sektenähnliche Gruppierung der 1960er Jahre, die durch die sogenannten „Tate“ und „LaBianca“-Morde Berühmtheit erlangten. Charles Manson, der Anführer der MF, hat in den 60er Jahren viele Menschen in seinen Bann gezogen und gilt als Mastermind der Gruppierung. Studien zeigen auch, dass Menschen tendenziell nach der Anerkennung durch Höhergestellte suchen (Gould, 2002, S. 1143 ff.). Die Datenerhebung und -auswertung bestätigen diese Annahme, die bereits vor Beginn der Forschungsarbeit als Hypothese festgehalten wurde. Der normalisierte Indegree von Charles Manson im Teilnetzwerk MF liegt bei 58,6%. Der normalisierte Outdegree bei 55,2%. Das zeigt, dass mehr als die Hälfte aller Beziehungen innerhalb der MF direkt zu Charles Manson führen beziehungsweise von Charles Manson ausgehen. Akteure, die innerhalb eines Netzwerkes durch viele Sozialbeziehungen auffallen, sind wichtiger als andere (Fuhse 2018: 57). Kein anderes Mitglied der MF weist ähnliche Werte auf. Darüber hinaus besitzt Charles Manson mit 19,2% den größten Wert der Betweenness-Zentralität. Diese gilt als Maß der Ermittlung des Einflusses innerhalb eines Netzwerkes und bezieht sich auf die Anzahl der kürzesten Wege eines Knotens zu anderen im Netzwerk. Je größer der Wert der Betweenness Zentralität ist, desto einflussreicher ist ein Akteur im Netzwerk. Hinter Charles Manson steht Charles Tex Watson mit einer Betweenness Zentralität von 8,2% (Kolleck 2014: 173) . Der Vergleich der beiden Werte zeigt, welche Bedeutung Manson in der MF hatte und erklärt gleichzeitig, weshalb sich die Gruppe nach der Festnahme von Charles Manson nach und nach auflöste - er fungierte als Brücke im Netzwerk und hielt die MF zusammen. Das ist demnach auch eine Bestätigung dafür, dass Charles Manson tatsächlich als Mastermind der MF bezeichnet werden kann.
 
+Die zweite Annahme befasste sich mit der Dichte des Netzwerkes der MF. Die Hypothese  lautete, dass die MF enge Beziehungen pflegte, weshalb eine hohe Dichte erwartet wurde. Die Datenanalyse und das daraus resultierende Netzwerk der MF widerlegt diese These. Zunächst lässt sich feststellen, dass die Beziehungen zu 90,1% reziprok sind. Das bedeutet, ist eine Beziehung vorhanden, ist diese mit großer Wahrscheinlichkeit wechselseitig (Fuhse 2018: 53). Die Dichte liegt ohne Isolates jedoch bei nur 13,8 %. Die Isolates werden hier bewusst nicht miteinberechnet, da über diese Personen nur wenig bis nichts bekannt ist und daher keine Aussagen über deren Beziehungen getroffen werden können. Ungeachtet der Isolates sind wenige von den insgesamt möglichen Beziehungen realisiert. Damit haben viele Akteure im Netzwerk keine Beziehung zueinander, was der ursprünglichen These einer vergleichsweise hohen Dichte widerspricht.
+
+Bei der Identifikation von Cliquen, wurden die Mitglieder der MF hervorgehoben, die an beiden Morden beteiligt waren, da diese mit einer Dichte von 100% vollständig miteinander vernetzt sind (Baur 2014: 956f.). Daraus lässt sich schließen, dass es einen inneren Kreis gab, der daher den Kern der MF darstellt. Dieser Kern ist gleichzeitig das Netzwerk der Mörder und lässt wiederum die Vermutung zu, dass diese stabilen Beziehungen ausschlaggebend dafür waren, ob gemeinsam Morde begangen wurden oder nicht. Die durchschnittliche Stärke der Beziehungen beträgt bei einer Skala von 1 - 3 bei den Tate-Mördern 2,33 und bei den LaBianca-Mördern 2,58. Unter Beachtung des Maximalwertes und vollständiger Reziprozität der jeweiligen Beziehungen sind dies hohe Werte und ein weiterer Beweis für Stabilität. Der Zusammenhang zwischen Stabilität und Mordbereitschaft wird dadurch unterstützt, dass Gemeinschaftstäter tendenziell mehr und schwerere Verbrechen verüben als Einzeltäter (Sarnecki, 2001, S. 162 ff.), was zeigt, dass die Morde durch die Stabilität der Clique positiv gefördert wurden. Bei beiden Morden waren zudem Patricia Krenwinkel und der zweit-einflussreichste Akteur in der MF beteiligt: Charles Tex Watson. Patricia Krenwinkel hat eine Betweenness Zentralität von 0,2% und hat damit einen vergleichsweise niedrigen Einfluss. Dementsprechend lässt sich, anders als vermutet, keine Korrelation zwischen Einfluss innerhalb des Netzwerkes und Mordbereitschaft erkennen. 
+
+Die dritte Annahme, dass die Beteiligten an den Tate- und LaBianca-Morden eine zumindest indirekte Beziehung zu ihren Opfern hatten, ließ sich durch die Recherche und das daraus resultierende Netzwerk widerlegen. Es bestand lediglich eine Tötungsbeziehung zwischen den Mördern und deren Opfern. Während der Recherche ergab sich jedoch die Erkenntnis, dass Charles Manson eine Beziehung zu dem Vorbesitzer des Wohnhauses Sharon Tates und Roman Polanskis hatte. Bevor das Paar das Haus bewohnte, lebte Terry Melcher, US-amerikanischer Musikproduzent, darin. Manson lernte Terry Melcher, Sohn von Doris Day, über Dennis Wilson, Mitglied der Band „The Beach Boys“, kennen. Melcher versprach Manson einen Plattenvertrag, hielt ihn jedoch lange hin. Letztendlich kam es weder zu einem Vorspielen seiner Musikstücke, noch zu einem Plattenvertrag. Hier liegt die Vermutung nahe, dass der Mordanschlag auf die Personen in der Villa am Cielo Drive ursprünglich als Rachefeldzug direkt gegen Terry Melcher geplant war. MF-Mitglied Charles „Tex“ Watson und der Rest der Mörder-Gruppierung hatten am 9. August 1969 zwar die Anweisung erhalten jeden Person in diesem Anwesen zu töten, jedoch keinen konkreten Namen einer Zielperson, die sie töten sollten (Watson, 1991, S. 139). Wären Sharon Tate und ihre Freunde noch am Leben, wenn sie sich nicht in diesem Anwesen aufgehalten hätten? Die Datenerhebung konnte darüber keinen Aufschluss geben.
+
+Interessant ist der Blick auf das Netzwerk des Filmes „Once Upon a Time in Hollywood“ - ein Film des bekannten Regisseurs Quentin Tarantino, welcher eine abgewandelte Geschichte der MF und deren Opfer erzählt. Hier sterben nicht Sharon Tate, Jay Sebring, Wojciech Frykowski, Abigail Folger und Steven Parent, sondern die Angreifer – die Mitglieder der MF. In diesem Netzwerk hat nicht Charles Manson die höchsten Degree Werte, sondern der fiktive Charakter Rick Dalton mit 50% (Indegree) und 54,5 % (Outdegree). Das mag vor allem daran liegen, dass Rick Dalton die Hauptfigur des Filmes ist und Charles Manson und die MF eine eher nebensächliche Rolle einnehmen. Daher sind die Werter von Charles Manson 40,9% (Indegree) und 45,4% (Outdegree) weitaus geringer. Letztendlich hat Tarantino seine Freiheit als Regisseur genutzt und womöglich die Geschichte abgebildet, die sich Hollywood gewünscht hätte.
+
+Zum Schluss ist noch eine letzte Erkenntnis zentral. In den Medien werden in Bezug auf die MF grundsätzlich Frauen abgebildet. Das bestärkt die Annahme, die MF hätte aus mehr Frauen als Männern bestanden. Das Netzwerk der Datenerhebung widerlegt dies, da es aus 27 Frauen und 33 Männern bestand. Dennoch zeigt die Recherche, dass die Frauen präsenter in den Medien waren, da sie aktiver waren als die Männer. Bei beiden Morden war Charles Tex Watson der einzige Mann. Das lässt sich auch durch die Stärke der Beziehung zu Charles Manson begründen. Während die Männer im Durchschnitt eine Beziehungsstärke von lediglich 2,0 aufweisen, sind es bei den Frauen ganze 2,5 exklusive Isolates. Mit Blick auf den Maximalwert von 3, ist 2,5 ein hoher Wert und betont die Differenz von 0,5 zu dem Wert der Männer deutlich. Daraus lässt sich schließen, dass Charles Manson die Frauen leichter mit seinen Ideen manipulieren konnte, da diese eine stärkere Bindung und somit größeres Vertrauen zu ihm aufbauten. Starke Beziehungen motivieren Akteure in einem Netzwerk zu internen Zusammenhalt (Portes & Sensenbrenner, 1993, S. 1329). Darüber hinaus setzen kriminelle Verbindungen auf Vertrauen (Erickson, 1981, S. 195), welches jedoch gleichzeitig mit einer gegenseitigen Einflussnahmen auf die Akteure verbunden ist (Laufer, 2018, S. 2).
+
+Zusammenfassend lässt sich festhalten, dass zwei von drei Hypothesen durch die Datenerhebung und das daraus resultierende Netzwerk widerlegt werden konnten.      
 
 
 ## Limitationen
@@ -1241,11 +1378,12 @@ Durch das gemeinsame Ziel und die klar vorgegebene Struktur wurden die internen 
 
 ## Lessons Learned
 
-Während der Datenerhebung standen wir immer wieder vor dem Problem, dass die Literatur über Charles Manson lückenhaft und sehr subjektiv war. Auch trotz intensiver Nachrecherche konnten nicht alle Informationen gefunden werden. Daher kam es in unserem Datensatz oftmals zu Isolates. Dies wirkte sich stark auf die Netzwerkerstellung und -analyse aus, in der wir mehrere, unterschiedliche Interpretationen besprachen. Eine Netzwerkstruktur, die zuvor noch nicht untersucht wurde ist spannend, es muss jedoch mit einem lückenhaften Datensatz und damit einem komplexeren Arbeitsprozess gerechnet werden. 
+Während der Datenerhebung standen wir immer wieder vor dem Problem, dass die Literatur über Charles Manson lückenhaft und sehr subjektiv war. Auch konnten trotz intensiver Nachrecherche nicht alle Informationen gefunden werden. Daher kam es in unserem Datensatz oftmals zu Isolates. Dies wirkte sich stark auf die Netzwerkerstellung und -analyse aus, in der wir mehrere, unterschiedliche Interpretationen besprachen. Eine Netzwerkstruktur, die zuvor noch nicht untersucht wurde ist spannend, es muss jedoch mit einem lückenhaften Datensatz und damit einem komplexeren Arbeitsprozess gerechnet werden. 
 
 Kommunikation ist der Schlüssel zum Erfolg – so auch in unserer Gruppe. Durch regelmäßige, ausführliche Teammeetings konnten Missverständnisse aus dem Weg geschafft und offene Fragen beantwortet werden. Gerade in einem lückenhaften Datensatz wie unserem war das von essentieller Bedeutung, um Fehlinterpretationen zu vermeiden. Das weitere Vorgehen wurde besprochen und ein gemeinschaftliches Verständnis über die Thematik innerhalb unserer Gruppe geschaffen. Wer Hilfe brauchte, wurde unterstützt. Durch die offene und regelmäßige Kommunikation gewährleisteten wir eine positive und motivierte Stimmung in unserer Gruppe. 
 
 Bei auftretenden Problemen war es immer hilfreich, sich an die anderen Gruppenmitglieder zu richten. Vor allem bei der Datenverarbeitung in R Studio war es von großer Hilfe, gemeinsam nach Lösungen zu suchen. Das gemeinsame Vorgehen bei Problemen half uns nicht nur diese zu lösen, sondern stärkte auch die Dynamik innerhalb der Gruppe. 
+
 
 
 
@@ -1255,11 +1393,11 @@ Bei auftretenden Problemen war es immer hilfreich, sich an die anderen Gruppenmi
 
 ### Wissenschaftliche Literatur | Publikationen: 
 
-Baumeister, Roy und Mark Leary (1995). The Need to Belong: Desire for Interpersonal Attachments as a Fundamental Human Motivation. Psychological Bulletin 117: 497–529.
+Baumeister, Roy und Mark Leary (1995). The Need to Belong: Desire for Interpersonal Attachments as a Fundamental Human Motivation. Psychological Bulletin 117: 497–529
 
 Baur, Nina; Blasius, Jörg (Hg.) (2014). Handbuch Methoden der empirischen Sozialforschung. Springer VS. Wiesbaden: Springer VS
 
-Bichler, Gisela; Lim, Steven; Larin, Edgar (2017): Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
+Bichler, Gisela; Lim, Steven; Larin, Edgar (2017). Tactical Social Network Analysis: Using Affiliation Networks to Aid Serial Homicide Investigation. In: Homicide Studies 21 (2), S. 133–158. DOI: 10.1177/1088767916671351
 
 Cullen, F. T. & Wilcox, P. (2010). Encyclopedia of criminological theory (Vol. 1). Sage.
 
@@ -1272,6 +1410,12 @@ Fuhse, Jan (2010). Menschenbild. In: Stegbauer C., Häußling R. (eds) Handbuch 
 Fuhse, Jan (2016). Soziale Netzwerke. Konzepte und Forschungsmethoden. Konstanz, München: UVK Verlagsgesellschaft mbH; UVK/Lucius (UTB Sozialwissenschaften, 4563)
 
 Gould, Roger (2002). The Origins of Status Hierarchies: A Formal Theory and Empirical Test. American Journal of Sociology 107(5): 1143–1178
+
+Laufer, Hartmund (2018). Vertrauensvolle Mitarbeiterführung: Hintergründe, Leitfäden, Lösungsvorschläge. Wiesbaden: Springer Gabler
+
+Portes, A., & Sensenbrenner, J. (1993). Embeddedness and immigration: Notes on the social determinants of economic action. American journal of sociology, 98(6), 1320-1350.
+
+Rau, M., & Höffler, K. (2020). Soziale Netzwerkanalyse in der deutschsprachigen Kriminologie: Vorhandenes, Herausforderungen und Potentiale. Kriminologie - Das Online-Journal, (1), 7-38. https://doi.org/10.18716/ojs/krimoj/2020.1.3
 
 Reiss, Albert J. (1988). Co-offending and Criminal Careers. Crime and Justice 10: 117–170
 
