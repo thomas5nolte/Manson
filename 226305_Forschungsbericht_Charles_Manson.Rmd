@@ -63,7 +63,7 @@ Die Materialien für unsere Netzwerkanalyse haben wir breit gefächert ausgewäh
 Der Datensatz ist unter (https://github.com/thomas5nolte/Manson) verfügbar.
 
 ##  Codebuch
-Das Codebuch ([https://raw.githubusercontent.com/thomas5nolte/Manson/master/Codebuch.md](https://github.com/thomas5nolte/Manson/blob/master/Readme.md)) beschreibt die Variablen, Relationen und Gewichte des Netzwerks und ist ebenfalls auf Github hinterlegt.
+Das Codebuch ([https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md](https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md)) beschreibt die Variablen, Relationen und Gewichte des Netzwerks und ist ebenfalls auf Github hinterlegt.
 
 ##  Vorbereitung der IDE
 
@@ -88,7 +88,7 @@ Die Edge- und Nodelisten werden über read.csv von Github geladen und mit dem Pa
 ```{r Einlesung der Daten - Netzwerkprojekt, message=FALSE}
 el_manson <-
   read.csv(
-    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_manson2.csv",
+    "https://raw.githubusercontent.com/thomas5nolte/Manson/master/el_manson.csv",
     header = T,
     as.is = T,
     sep = ","
@@ -1396,7 +1396,7 @@ list.edge.attributes(hollywood)
 # edge.attributes(hollywood)
 ```
 
-Das Netzwerk hat nach dem Codebuch [https://github.com/thomas5nolte/Manson/blob/master/Readme.md](https://github.com/thomas5nolte/Manson/blob/master/Readme.md) folgende Attribute:
+Das Netzwerk hat nach dem Codebuch [https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md](https://github.com/thomas5nolte/Manson/blob/master/Codebuch.md) folgende Attribute:
 
 *Vertex-Attribute*
 - name: Name des Knotens
@@ -1444,7 +1444,7 @@ Die Vertex-Attribute treffen auf alle Knoten zu.
 
 ## Komplettes annotiertes Notebook 
 
-Das Notebook ist unter [https://raw.githubusercontent.com/thomas5nolte/Manson/master/Manson_version_1.2.7.rmd](https://raw.githubusercontent.com/thomas5nolte/Manson/master/Manson_version_1.2.7.rmd) erreichbar. 
+Das Notebook ist unter [https://github.com/thomas5nolte/Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd](https://github.com/thomas5nolte/Manson/blob/master/226305_Forschungsbericht_Charles_Manson.Rmd) erreichbar. 
 
 ## TeilnehmerInnen des Projekts und Arbeitsaufwand im Projekt
 
