@@ -204,8 +204,6 @@ library(knitr)
 
 # Analyse und Interpretation 
 
-##Gesamtnetzwerk
-
 ##  Einlesen des Datensatzes & Erstellung Igraph-Objekt
 
 Die Edge- und Nodelisten werden über read.csv von Github geladen und mit dem Packet igraph zu einem Objekt zusammengeführt. 
@@ -303,8 +301,21 @@ E(manson)$year_end
 In diesem Schritt plotten wir das Gesamtnetzwerk um einen Eindruck von der Größe des Netzwerks zu gewinnen.
 
 ```{r Standardplot ohne Anpassungen, fig.height=9, fig.width=16, paged.print=TRUE}
-plot(manson, aps=0, main = "Gesamtnetzwerk", vertex.size = 5, vertex.label.dist=1, edge.arrow.size=.4)
-plot(vertex.label.dist = 1, hollywood, edge.arrow.size = 0.2, main = "Once upon a time in Hollywood", vertex.size = 5)
+plot(
+  manson,
+  aps = 0,
+  main = "Gesamtnetzwerk",
+  vertex.size = 5,
+  vertex.label.dist = 1,
+  edge.arrow.size = .4
+)
+plot(
+  vertex.label.dist = 1,
+  hollywood,
+  edge.arrow.size = 0.2,
+  main = "Once upon a time in Hollywood",
+  vertex.size = 5
+)
 ```
 
 Erkennbar ist, dass der Film nur einen kleinen Teil der Realität wiederspiegelt. 
@@ -369,11 +380,11 @@ Dementsprechend sind Jay Sebring und die Manson Family am weitesten voneinander 
 
 ```{r Zentralitätsmaße manson}
 #Indegree = Anzahl der Kanten, die auf einen Knoten eingehen. (Popularität)
-degree(manson, mode="in",normalized = TRUE)
-centr_degree(manson, mode="in", normalized=T)
+degree(manson, mode = "in", normalized = TRUE)
+centr_degree(manson, mode = "in", normalized = T)
 #Outdegree = Anzahl der Kanten, die ein Knoten zu anderen Knoten hat. (Aktivität)
-degree(manson, mode="out", normalized = T)
-centr_degree(manson, mode="out", normalized=T)
+degree(manson, mode = "out", normalized = T)
+centr_degree(manson, mode = "out", normalized = T)
 
 #Components zeigt die Anzahl der Teilnetzwerke und deren Größe
 components(manson)
@@ -409,21 +420,25 @@ Das Gesamtnetzwerk hat nur __eine Componente__. Das bedeutet, dass alle Knoten i
 
 
 ```{r Zentralitätsmaße hollywood, eval=FALSE, include=FALSE}
-degree_hollywood <- degree(hollywood, mode="IN", normalized = TRUE) #Hier lässt sich der Knoten mit den meisten Verbindungen finden
+degree_hollywood <-
+  degree(hollywood, mode = "IN", normalized = TRUE)
+#Hier lässt sich der Knoten mit den meisten Verbindungen finden
 degree_hollywood
 
-#View(degree_hollywood) 
+#View(degree_hollywood)
 #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
-components(hollywood) 
-#Components zeigt die Anzahl der Teilnetzwerke und deren Größewhich.max(degree(hollywood, normalized = T))
+components(hollywood)
+#Components zeigt die Anzahl der Teilnetzwerke und deren Größe
+which.max(degree(hollywood, normalized = T))
 #Liefert den Knoten, im Netzwerk hollywood, welcher den größten Degreewert hat
 betweenness(hollywood, normalized = T)
-#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? Brücke bzw. Verbindung
+#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? 
+#Brücke bzw. Verbindung
 which.max(betweenness(hollywood, normalized = T))
 #Liefert den Knoten, im Netzwerk manson, welcher den größten Betweeneswert hat
 ego_size(hollywood)
 #Liefert uns den Knoten, mit den meisten Verbindungen
-mean_distance(hollywood) 
+mean_distance(hollywood)
 #Gibt die längste Verbindung zwischen zwei Knoten aus
 ```
 Aus unseren Recherchen kommt heraus, dass Charles Manson der Akteur mit dem höchsten Degreewert ist. Gemäß dem Film "Once upon a time in Hollywood ist es Rick Dalton. Dieser Akteur ist ein fiktiver Charakter, welcher von Hollywood für ein besseres Storytelling erfunden wurde. Rick Dalton hat in unserem Netzwerk auch noch den höchsten Betweennesswert. Dies bedeutet, dass er der Akteur ist, welcher für den Zusammenhalt des Netzwerkes am bedeutensten ist. 
@@ -431,51 +446,56 @@ Aus unseren Recherchen kommt heraus, dass Charles Manson der Akteur mit dem höc
 
 ```{r Pfaddistanz Gesamtnetzwerk, fig.height=9, fig.width=16}
 # Visualisierung der Pfaddistanz
-# 
-dia <- get.diameter(manson, directed=T) # ruft die Werte auf
-vcol <- rep("gray80", vcount(manson)) # setzt alle Werte der Knoten auf grau
+dia <- get.diameter(manson, directed = T) # ruft die Werte auf
+vcol <-
+  rep("gray80", vcount(manson)) # setzt alle Werte der Knoten auf grau
 vcol[dia] <- "gold" # setzt alle Vertices des Diameters auf gold
 ecol <- rep("gray80", ecount(manson)) # setzt alle Kanten auf grau
-ecol[E(manson, path=dia)] <- "orange" # definiert die Farbe des Pfads
+ecol[E(manson, path = dia)] <-
+  "orange" # definiert die Farbe des Pfads
 
 # sucht die Kanten entlang des Pfades und färbt diese ein
-plot(manson,
-     layout=layout_nicely,
-     vertex.color=vcol,
-     edge.color=ecol,
-     edge.arrow.size=.2,
-     vertex.size = 2,
-     vertex.label.size = .1,
-     edge.curved=.2,
-     main="Diameter im Netzwerk",
-     sub="Durchmesser auf dem kürzesten Weg")
+plot(
+  manson,
+  layout = layout_nicely,
+  vertex.color = vcol,
+  edge.color = ecol,
+  edge.arrow.size = .2,
+  vertex.size = 2,
+  vertex.label.size = .1,
+  edge.curved = .2,
+  main = "Diameter im Netzwerk",
+  sub = "Durchmesser auf dem kürzesten Weg"
+)
 ```
 ```{r Pfaddistanz Hollywood, fig.width=16}
 # Visualisierung der Pfaddistanz
-# 
-dia <- get.diameter(hollywood, directed=T) # ruft die Werte auf
-vcol <- rep("gray80", vcount(hollywood)) # setzt alle Werte der Knoten auf grau
+dia <- get.diameter(hollywood, directed = T) # ruft die Werte auf
+vcol <-
+  rep("gray80", vcount(hollywood)) # setzt alle Werte der Knoten auf grau
 vcol[dia] <- "gold" # setzt alle Vertices des Diameters auf gold
-ecol <- rep("gray80", ecount(hollywood)) # setzt alle Kanten auf grau
-ecol[E(hollywood, path=dia)] <- "orange" # definiert die Farbe des Pfads
-
+ecol <-
+  rep("gray80", ecount(hollywood)) # setzt alle Kanten auf grau
+ecol[E(hollywood, path = dia)] <-
+  "orange" # definiert die Farbe des Pfads
 # sucht die Kanten entlang des Pfades und färbt diese ein
-plot(hollywood,
-     asp=0,
-     layout=layout_nicely,
-     vertex.color=vcol,
-     edge.color=ecol,
-     edge.arrow.size=.2,
-     edge.curved=.2,
-     vertex.size=5,
-     vertex.label.dist=1,
-     main="Diameter im Netzwerk",
-     sub="Durchmesser auf dem kürzesten Weg")
-
+plot(
+  hollywood,
+  asp = 0,
+  layout = layout_nicely,
+  vertex.color = vcol,
+  edge.color = ecol,
+  edge.arrow.size = .2,
+  edge.curved = .2,
+  vertex.size = 5,
+  vertex.label.dist = 1,
+  main = "Diameter im Netzwerk",
+  sub = "Durchmesser auf dem kürzesten Weg"
+)
 ```
 
 ```{r Weitere Informationen zum Gesamtnetzwerk}
-#Wie	viele	Componenten	hat	das	Netzwerk?	
+#Wie	viele	Componenten	hat	das	Netzwerk?
 components(manson)
 is_connected(manson)
 #Welchen	Durchmesser	hat	das	Netzwerk?
@@ -490,7 +510,7 @@ groups(manson)
 ```
 
 ```{r Weitere Informationen zum Hollywoodnetzwerk}
-#Wie	viele	Componenten	hat	das	Netzwerk?	
+#Wie	viele	Componenten	hat	das	Netzwerk?
 components(hollywood)
 is_connected(hollywood)
 #Welchen	Durchmesser	hat	das	Netzwerk?
@@ -502,9 +522,23 @@ cluster_walktrap(hollywood)
 ```
 ```{r WalktrapCluster der Gesamtnetzwerke, fig.height=9, fig.width=16}
 cw_hollywood <- cluster_walktrap(hollywood)
-plot(cw_hollywood, hollywood, vertex.size=5, layout=layout_nicely, asp=0, edge.arrow.size=0.4)
+plot(
+  cw_hollywood,
+  hollywood,
+  vertex.size = 5,
+  layout = layout_nicely,
+  asp = 0,
+  edge.arrow.size = 0.4
+)
 cw_gesamt <- cluster_walktrap(manson)
-plot(cw_gesamt, manson, vertex.size=3, layout=layout_nicely, asp=0, edge.arrow.size=0.4)
+plot(
+  cw_gesamt,
+  manson,
+  vertex.size = 3,
+  layout = layout_nicely,
+  asp = 0,
+  edge.arrow.size = 0.4
+)
 ```
 
 Die Cluster zeigen, dass die Menschen Bruce Lee, Rick Dalton und Marvin Schwartz die Verbindung zwischen der Mansonfamilie und den Opfern sind. Diese sind erfundene Charaktere, welche in der Realität nicht vorhanden waren.  
@@ -516,13 +550,17 @@ Es gibt noch weitere Clustering-Verfahren, die Cluster nach unterschiedlichen Kr
 # erstellt die Berechnung für die Modularität und deren Teilgruppen
 eb_hollywood <- cluster_edge_betweenness(hollywood)
 eb_hollywood
-plot(eb_hollywood, hollywood, vertex.size=3, layout=layout_nicely, asp=0, edge.arrow.size=0.1, main= "Edge-Betweenness-Cluster Gesamtnetzwerk")
+plot(
+  eb_hollywood,
+  hollywood,
+  vertex.size = 3,
+  layout = layout_nicely,
+  asp = 0,
+  edge.arrow.size = 0.1,
+  main = "Edge-Betweenness-Cluster Gesamtnetzwerk"
+)
 ```
-Es gibt 56 Gruppen. Der Cluster macht im Gesamtnetzwerk noch keinen Sinn.... Teilnetzwerk beachten!!!
-
-Um Netzwerke in einzelne Componenten oder Cluster zu zerlegen verwenden wir den Befehl decompose.graph(g). Wir wissen, dass das Netzwerk zwei Cluster oder Componenten hat, die ausgegeben werden. Danach lassen sich die Cluster getrennt auftrennen, als neue igraph-Objekte umschreiben und visualisieren.
-
-
+Es gibt 56 Gruppen. Der Cluster macht im Gesamtnetzwerk durch die Vielzahl der Gruppen keinen Sinn.
 
 # Teilnetzwerke
 
@@ -544,14 +582,15 @@ plot (
   edge.curved = curve_multiple(member),
   main = "Mitglieder der Mansonfamilie"
 )
-#Version 2- Mit Manson hervorgehoben
-inc.edges <- incident(member,  V(member)[name=="Charles Manson"], mode="all")
+#Version 2 - Mit Manson hervorgehoben
+inc.edges <-
+  incident(member,  V(member)[name == "Charles Manson"], mode = "all")
 
 # Set colors to plot the selected edges.
 ecol <- rep("gray80", ecount(member))
 ecol[inc.edges] <- "orange"
 vcol <- rep("grey40", vcount(member))
-vcol[V(member)$name=="Charles Manson"] <- "gold"
+vcol[V(member)$name == "Charles Manson"] <- "gold"
 
 plot (
   member,
@@ -565,8 +604,8 @@ plot (
   edge.curved = curve_multiple(member),
   main = "Mitglieder der Mansonfamilie",
   sub = "Kanten zu Charles Manson eingefärbt",
-  vertex.color=vcol, 
-  edge.color=ecol
+  vertex.color = vcol,
+  edge.color = ecol
 )
 ```
 Es gibt viele Knoten, die keine Verbindungen zueinander bzw. untereinander haben. Diese bilden sich im Netzwerk als Isolates heraus. Grund dafür sind die verschiedenen Quellen, in welchen nur subjektive Daten zu finden waren. Somit können wir keine gesicherten Aussagen treffen, mit welchen Mitgliedern der Mansonfamilie die Isolates Kontakt hatten und mit welchen nicht. 
@@ -575,34 +614,38 @@ Es gibt viele Knoten, die keine Verbindungen zueinander bzw. untereinander haben
 ```{r Reziprozität Mansonfamilie}
 # Berechnung der Reziprozität
 reciprocity(member, mode = "ratio")
-# Der berechnete Wert gibt das Verhältnis von reziproken Beziehungen zu normalen Beziehungen an, in diesem Fall sind 90,1% der Beziehungen im Netzwerk reziprok.
+# Der berechnete Wert gibt das Verhältnis von reziproken Beziehungen zu normalen Beziehungen an.
+# In diesem Fall sind 90,1% der Beziehungen im Netzwerk reziprok.
 ```
 Das Netzwerk weist eine sehr hohe Reziprozität von 90,1 % auf. 
 
 ```{r Degree zum Familiennetzwerk}
-degree_member_in <- degree(member, mode="IN") #Hier lässt sich der Knoten mit den meisten Verbindungen finden
-degree_member_out <- degree(member, mode="OUT")
+degree_member_in <-
+  degree(member, mode = "IN") 
+#Hier lässt sich der Knoten mit den meisten Verbindungen finden
+degree_member_out <- degree(member, mode = "OUT")
 which.max(betweenness(member))
 #Da die Console die Ausgabe auf eine gewisse Anzahl Ansgaben begrenzt, muss die Tabelle mit view ausgegeben werden
 ```
 
 ```{r Analyse der Mansonfamilie}
-components(member) 
-
+components(member)
 #View(degree(member, normalized = TRUE))
-#Components zeigt die Anzahl der Teilnetzwerke und deren Größewhich.max(degree(member, normalized = T))
+#Components zeigt die Anzahl der Teilnetzwerke und deren Größe
+which.max(degree(member, normalized = T))
 #Liefert den Knoten, im Netzwerk member, welcher den größten Degreewert hat
 #View(betweenness(member, normalized = T))
-#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? Brücke bzw. Verbindung
+#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann?
+#Brücke bzw. Verbindung
 #which.max(betweenness(member, normalized = T))
 #Liefert den Knoten, im Netzwerk member, welcher den größten Betweeneswert hat
 ego_size(member)
 #Liefert uns den Knoten, mit den meisten Verbindungen
-mean_distance(member) 
+mean_distance(member)
 #Gibt die längste Verbindung zwischen zwei Knoten aus
-edge_density(member) 
+edge_density(member)
 #Gibt die Kantendichte des Netzwerks aus
-#Wie	viele	Componenten	hat	das	Netzwerk?	
+#Wie	viele	Componenten	hat	das	Netzwerk?
 components(hollywood)
 #Welchen	Durchmesser	hat	das	Netzwerk?
 diameter(hollywood)
@@ -615,33 +658,44 @@ cluster_walktrap(hollywood)
 ```
 
 ```{r Pfaddistanz Member, fig.width=16}
-#Da der Pfad nur über verbundene Knoten entlang läuft, blenden wir alle Isolates aus. 
-member1 <- delete.vertices(member, degree(member) == 0)#Löscht alle Isolates
+#Da der Pfad nur über verbundene Knoten entlang läuft, blenden wir alle Isolates aus.
+member1 <-
+  delete.vertices(member, degree(member) == 0)#Löscht alle Isolates
 
 # Visualisierung der Pfaddistanz
-dia <- get.diameter(member1, directed=T) # ruft die Werte auf
-vcol <- rep("gray80", vcount(member1)) # setzt alle Werte der Knoten auf grau
+dia <- get.diameter(member1, directed = T) # ruft die Werte auf
+vcol <-
+  rep("gray80", vcount(member1)) # setzt alle Werte der Knoten auf grau
 vcol[dia] <- "gold" # setzt alle Vertices des Diameters auf gold
 ecol <- rep("gray80", ecount(member1)) # setzt alle Kanten auf grau
-ecol[E(member1, path=dia)] <- "orange" # definiert die Farbe des Pfads
+ecol[E(member1, path = dia)] <-
+  "orange" # definiert die Farbe des Pfads
 
 # sucht die Kanten entlang des Pfades und färbt diese ein
-plot(member1,
-     layout=layout_nicely,
-     vertex.color=vcol,
-     edge.color=ecol,
-     edge.arrow.size=.2,
-     edge.curved=.2,
-     vertex.size=5,
-     main="Diameter im Netzwerk",
-     sub="Durchmesser auf dem kürzesten Weg")
+plot(
+  member1,
+  layout = layout_nicely,
+  vertex.color = vcol,
+  edge.color = ecol,
+  edge.arrow.size = .2,
+  edge.curved = .2,
+  vertex.size = 5,
+  main = "Diameter im Netzwerk",
+  sub = "Durchmesser auf dem kürzesten Weg"
+)
 ```
 ```{r Untergruppen in der Mansonfamilie (WalktrapCluster), fig.height=9, fig.width=16}
 #Die Clusterberechnung zeigt die verschiedenen Untergruppen in einem Netzwerk an.
 member_gc <- cluster_walktrap(member1)
 modularity(member_gc)
 membership(member_gc)
-plot(member_gc, member1, vertex.size=10, edge.arrow.size=.2, main="Clusteranalyse der Mansonfamilie, ohne Isolates")
+plot(
+  member_gc,
+  member1,
+  vertex.size = 10,
+  edge.arrow.size = .2,
+  main = "Clusteranalyse der Mansonfamilie, ohne Isolates"
+)
 ```
 Es gibt noch weitere Clustering-Verfahren, die Cluster nach unterschiedlichen Kriterien bilden. Der Algorithmus von cluster_edge_betweeness() geht davon aus, dass sich sich Cluster vor allem an den "Sollbruchstellen" eines Netzwerks trennen lassen. Diese werden über den Wert der Betweenness berechnet, also die Knoten, die in hohem Maße für die Verbindung zu anderen Knoten beitragen. 
 
@@ -649,7 +703,14 @@ Es gibt noch weitere Clustering-Verfahren, die Cluster nach unterschiedlichen Kr
 # erstellt die Berechnung für die Modularität und deren Teilgruppen
 eb_member <- cluster_edge_betweenness(member1)
 eb_member
-plot(eb_member, member1, vertex.size=3, layout=layout_nicely, edge.arrow.size=0.1, main= "Edge-Betweenness-Cluster Membernetzwerk")
+plot(
+  eb_member,
+  member1,
+  vertex.size = 3,
+  layout = layout_nicely,
+  edge.arrow.size = 0.1,
+  main = "Edge-Betweenness-Cluster Membernetzwerk"
+)
 ```
 
 
@@ -697,7 +758,7 @@ plot(
   member,
   layout = layout_nicely,
   vertex.size = ds * 10,
-  vertex.label.font=.01,
+  vertex.label.font = .01,
   vertex.color = "gold",
   vertex.frame.color = NA,
   edge.color = "grey90",
@@ -708,7 +769,8 @@ plot(
 plot(
   member,
   layout = layout_with_kk,
-  vertex.size = (betweenness(member) / 600 + 5), #KLAPPT NOCH NICHT 
+  vertex.size = (betweenness(member) / 600 + 5),
+  #KLAPPT NOCH NICHT
   vertex.color = "orange",
   vertex.frame.color = NA,
   edge.color = "grey90",
@@ -758,10 +820,12 @@ plot(
   main = "Frauen der Mansonfamilie"
 )
 
-#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? Brücke bzw. Verbindung
+#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? 
+#Brücke bzw. Verbindung
 betweenness(member_women, normalized = F)
-#Wie schnell kann dieser Knoten alle anderen Knoten im Netzwerk erreichen? Hub bzw. Verteilerknoten für Informationen.
-close_women <-closeness(member_women, normalized=T)
+#Wie schnell kann dieser Knoten alle anderen Knoten im Netzwerk erreichen? 
+#Hub bzw. Verteilerknoten für Informationen.
+close_women <- closeness(member_women, normalized = T)
 
 #Der Befehl prüft, wie hoch die Dichte des Netzwerks ist.
 edge_density(member_women)
@@ -790,10 +854,13 @@ plot(
   edge.curved = curve_multiple(member),
   main = "Männer der Mansonfamilie"
 )
-#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? Brücke bzw. Verbindung
+#Wie wahrscheinlich ist es, dass dieser Knoten die Verbindung zu anderen Knoten im Netzwerk herstellen kann? 
+#Brücke bzw. Verbindung
 betweenness(member_men, normalized = T)
-#Wie schnell kann dieser Knoten alle anderen Knoten im Netzwerk erreichen? Hub bzw. Verteilerknoten für Informationen.
-test <-closeness(member_men, normalized=T)
+#Wie schnell kann dieser Knoten alle anderen Knoten im Netzwerk erreichen? 
+#Hub bzw. Verteilerknoten für Informationen.
+test <- closeness(member_men, normalized = T)
+test
 ```
 Es gibt 32 Männer in der Mansonfamilie
 
@@ -818,7 +885,7 @@ E(member)$year_beginning
 
 
 ## 1961
-zeit1 <- subgraph.edges(zeit0, E(zeit0)[year_beginning == "1961"]) 
+zeit1 <- subgraph.edges(zeit0, E(zeit0)[year_beginning == "1961"])
 
 ## 1966
 zeit2 <-
@@ -828,20 +895,23 @@ zeit2 <- delete.vertices(zeit2, degree(zeit2) == 0)
 ## 1967
 zeit3 <-
   delete.edges(zeit0, E(zeit0)[(year_beginning != "1961") &
-                                 (year_beginning != "1966") & (year_beginning != "1967")])
+                                 (year_beginning != "1966") &
+                                 (year_beginning != "1967")])
 zeit3 <- delete.vertices(zeit3, degree(zeit3) == 0)
 ## 1968
 zeit4 <-
   delete.edges(zeit0, E(zeit0)[(year_beginning != "1961") &
                                  (year_beginning != "1966") &
-                                 (year_beginning != "1967") & (year_beginning != "1968")])
+                                 (year_beginning != "1967") &
+                                 (year_beginning != "1968")])
 zeit4 <- delete.vertices(zeit4, degree(zeit4) == 0)
 ## 1969
 zeit5 <-
   delete.edges(zeit0, E(zeit0)[(year_beginning != "1961") &
                                  (year_beginning != "1966") &
                                  (year_beginning != "1967") &
-                                 (year_beginning != "1968") & (year_beginning != "1969")])
+                                 (year_beginning != "1968") &
+                                 (year_beginning != "1969")])
 zeit5 <- delete.vertices(zeit5, degree(zeit5) == 0)
 ## 1970
 zeit6 <-
@@ -849,7 +919,8 @@ zeit6 <-
                                  (year_beginning != "1966") &
                                  (year_beginning != "1967") &
                                  (year_beginning != "1968") &
-                                 (year_beginning != "1969") & (year_beginning != "1970")])
+                                 (year_beginning != "1969") &
+                                 (year_beginning != "1970")])
 zeit6 <- delete.vertices(zeit6, degree(zeit6) == 0)
 zeit7 <- delete.vertices(zeit0, degree(zeit0) == 0)
 
@@ -862,7 +933,7 @@ plot(
   main = 1961,
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit2,
@@ -870,7 +941,7 @@ plot(
   main = 1966,
   vertex.size = 8,
   edge.arrow.size = 1,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit3,
@@ -878,7 +949,7 @@ plot(
   main = 1967,
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit4,
@@ -886,7 +957,7 @@ plot(
   main = 1968,
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit5,
@@ -894,7 +965,7 @@ plot(
   main = 1969,
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit6,
@@ -902,15 +973,15 @@ plot(
   main = 1970,
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit7,
-  layout= layout_nicely,
+  layout = layout_nicely,
   main = "Ohne Isolates",
   vertex.size = 8,
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 plot(
   zeit0,
@@ -919,7 +990,7 @@ plot(
   vertex.size = 4,
   main = "Gesamt",
   edge.arrow.size = 0.2,
-  edge.color = gray(.8, alpha=.7)
+  edge.color = gray(.8, alpha = .7)
 )
 ```
 
@@ -942,28 +1013,26 @@ E(zeit7)$weight
 E(zeit7)[E(zeit7)$weight == " 1"]$color <- "gray"
 E(zeit7)[E(zeit7)$weight == " 2"]$color <- "yellow"
 E(zeit7)[E(zeit7)$weight == " 3"]$color <- "red"
-plot(zeit7,
-     layout = layout_nicely,
-     edge.width = E(zeit7)$weight,
-     vertex.size=5, 
-     edge.arrow.size = 0.4)
+plot(
+  zeit7,
+  layout = layout_nicely,
+  edge.width = E(zeit7)$weight,
+  vertex.size = 5,
+  edge.arrow.size = 0.4
+)
 ```
 
 
 
 ```{r Mansonfamilie ohne Isolates vs. Ego Netzwerk Manson, fig.height=9, fig.width=16}
-plot(zeit7)
+#Uns interessiert das Ego-Netzwerk vom Indegree-King (Charles Manson)
 
-# Uns interessiert das Ego-Netzwerk vom Indegree-King (Charles Manson)
-
-#Zeigt die Beziehungen ersten Grades an 
-
-# ego_size() zeigt uns den Wert mit den höchsten Verbindungen (degrees)
 V(manson)$egos <- ego_size(manson)
 vertex.attributes(manson)$egos
 which.max(vertex.attributes(manson)$egos)
 
-manson_simplify <- delete.edges(manson,  E(manson)[which_multiple(manson, eids = E(manson))]) #lässt nur eine Verbindung pro Knoten anzeigen
+manson_simplify <- delete.edges(manson,  E(manson)[which_multiple(manson, eids = E(manson))]) 
+#lässt nur eine Verbindung pro Knoten anzeigen
 
 # erzeugt ein Egonetzwerk
 ego_g <- make_ego_graph(manson_simplify, order = 1, nodes = V(manson_simplify)$name == "Charles Manson", mode ="all")
@@ -991,14 +1060,16 @@ plot(ego_net,
      edge.color = gray(0.6, alpha=0.9),
      edge.arrow.size = .4
      )
-ego_frauen <- delete.vertices(ego_net, V(ego_net)[(sex != 2)])
 ``` 
 
 ```{r Wie stehen die Frauen zu Manson}
 ego_frauen <- delete.vertices(ego_net, V(ego_net)[(member != 2)])
-ego_frauen <- delete.vertices(ego_frauen, V(ego_frauen)[(sex != 2)&(name !="Charles Manson")])
-inc.edges <- incident(ego_frauen,  V(ego_frauen)[name=="Charles Manson"], mode="in")
-ego_frauen<-subgraph.edges(ego_frauen, inc.edges) 
+ego_frauen <-
+  delete.vertices(ego_frauen, V(ego_frauen)[(sex != 2) &
+                                              (name != "Charles Manson")])
+inc.edges <-
+  incident(ego_frauen,  V(ego_frauen)[name == "Charles Manson"], mode = "in")
+ego_frauen <- subgraph.edges(ego_frauen, inc.edges)
 print(E(ego_frauen)$weight)
 plot(ego_frauen)
 ```
@@ -1007,21 +1078,13 @@ Durchschnittsweight: 2,47
 ```{r Wie stehen die Männer zu Manson}
 ego_men <- delete.vertices(ego_net, V(ego_net)[(member != 2)])
 ego_men <- delete.vertices(ego_men, V(ego_men)[(sex != 1)])
-inc.edges_men <- incident(ego_men,  V(ego_men)[name=="Charles Manson"], mode="in")
-ego_men<-subgraph.edges(ego_men, inc.edges_men)
+inc.edges_men <-
+  incident(ego_men,  V(ego_men)[name == "Charles Manson"], mode = "in")
+ego_men <- subgraph.edges(ego_men, inc.edges_men)
 print(E(ego_men)$weight)
 plot(ego_men)
 ```
 Durchschnitsweight: 2,0
-
-
-```{r Homophilie Ego-Netzwerk, eval=FALSE, include=FALSE}
-assortativity_nominal(ego_net, V(ego_net)$weight, directed=FALSE)
-
-```
-
-
-
 
 ```{r Liebesbeziehungen}
 liebe <- delete.vertices(manson, V(manson)[member != "2"])
@@ -1102,7 +1165,6 @@ Dieses Netzwerk zeit alle Mörder, welche in der Mansonfamilie waren. Hier ist n
 
 ```{r Dichte Täter}
 edge_density(morde)
-mean(E(morde)$weight)
 E(morde)$weight
 ```
 Die Kantendichte beträgt 16,3 %. 
@@ -1117,7 +1179,6 @@ plot(
   edge.arrow.size = .6,
   layout = layout_nicely
 )
-
 ```
 
 Hierbei lässt sich erkennen, dass auch unter den Tätern Charles Manson die Schlüsselfigur war. 
